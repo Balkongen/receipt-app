@@ -1,10 +1,8 @@
-import * as fs from "fs";
 import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 import { IReceiptInfo } from "./interface/IReceiptInfo";
 
 
 // TODO Should date be present, and what date? date of payment I assume.
-// TODO make it look nicer
 const constructPDF = async (receiptInfo: IReceiptInfo, heading: string) => {
   const pdfDoc = await PDFDocument.create();
 
